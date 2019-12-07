@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	text-align: center; 
+}
+svg{
+	height: 60vh;
+}
+#right-wheel, #left-wheel{
+	animation: wheel 2s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+#man-bike{
+	animation:bike 1s ease infinite alternate;
+	transform-origin: bottom;
+}
+#hat{
+	animation: hat 1s ease infinite alternate; 
+	transform-origin: bottom;
+}
+body{
+	animation: col 5s ease-in-out infinite alternate;
+}
+@keyframes wheel{
+	from {
+		transform: rotateZ(0deg);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes bike{
+	from{
+		transform: rotateX(0deg);
+	}
+	to{
+		transform: rotateX(20deg);
+	}
+}
+@keyframes hat{
+	from{
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	to{
+		transform: rotateX(20deg) rotateY(20deg);
+	}
+}
+@keyframes col{
+	25%{
+		background: linear-gradient(45deg, red, yellow);
+	}
+	50%{
+		background: linear-gradient(45deg, blue, yellow);	
+	}
+	75%{
+		background: linear-gradient(45deg, red, black);
+	}
+	100%{
+		background: linear-gradient(45deg, red, yellow);
+	}
+}
