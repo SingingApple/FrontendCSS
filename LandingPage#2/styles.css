@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: normal;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #555;
+}
+nav {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.75;
+}
+a:hover {
+  opacity: 1;
+}
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: fadeIn 1s ease-in 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+header h2 {
+  font-family: "Quicksand", sans-serif;
+}
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+header nav li {
+  margin: 0px 15px;
+}
+a.btn {
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3f51b5;
+  opacity: 1;
+  padding: 25px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.hero .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-color: #3f51b5;
+}
+.hero h1 {
+  font: bold 16px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.hero h3 {
+  color: #fff;
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+.hero-content-area {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slideFade 1s forwards;
+}
+@keyframes slideFade {
+  100% {
+    opacity: 1;
+    margin-top: -100px;
+  }
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+}
