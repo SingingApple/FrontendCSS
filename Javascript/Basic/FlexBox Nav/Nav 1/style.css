@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 70px;
+  border-bottom: 1px solid #fff;
+}
+nav {
+  width: 60%;
+}
+header ul {
+  display: flex;
+  margin: auto auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+a:hover {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #fff;
+}
+.btn-area {
+  margin: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #000;
+  padding: 10px 30px;
+  border-radius: 5px;
+}

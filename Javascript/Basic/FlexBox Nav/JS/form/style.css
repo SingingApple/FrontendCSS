@@ -1,0 +1,23 @@
+.signup-form {
+  background: grey;
+  padding: 10px;
+  margin: 10%;
+  width: 300px;
+  margin: 10px auto;
+}
+input {
+  display: block;
+  padding: 4px;
+  margin: 10px auto;
+}
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 10px;
+}
+.success {
+  border: 1px solid green;
+}
+.error {
+  border: 1px solid crimson;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .color {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+      }
+      img {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: -10;
+        background: black;
+        height: 50%;
+        width: 90%;
+      }
+      span {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: -9999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color"></div>
+    <img
+      src="https://media.npr.org/assets/img/2019/01/29/velvet-buzzsaw_001_wide-ca9464e9aaa1529b40a31284d654131546f2af30-s800-c85.jpg"
+      alt=""
+    />
+    <span> THIS WILL BE THE QUESTION</span>
+  </body>
+</html>
